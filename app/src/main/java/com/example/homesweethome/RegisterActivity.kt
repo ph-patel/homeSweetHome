@@ -41,7 +41,7 @@ class RegisterActivity : AppCompatActivity() {
                 // Successfully signed in
                 val user = FirebaseAuth.getInstance().currentUser
                 // ...
-                val intent = Intent(applicationContext, RentalActivity::class.java)
+                val intent = Intent(applicationContext, MainActivity::class.java)
                 startActivity(intent)
                 finish()
             } else {
